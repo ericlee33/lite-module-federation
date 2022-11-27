@@ -1,0 +1,29 @@
+{
+  "name": "lite-module-federation",
+  "version": "1.0.4",
+  "description": "Lighter weight than webpack module federation",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "module-federation",
+    "webpack",
+    "loader",
+    "micro-frontend"
+  ],
+  "author": "Eric lee",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.9.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.0",
+    "react-dom": ">=16.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
